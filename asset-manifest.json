@@ -1,14 +1,14 @@
 {
-  "main.css": "/apn-event-admin/static/css/main.b357046e.chunk.css",
-  "main.js": "/apn-event-admin/static/js/main.c6b1c970.chunk.js",
-  "main.js.map": "/apn-event-admin/static/js/main.c6b1c970.chunk.js.map",
-  "static/js/1.16fc7581.chunk.js": "/apn-event-admin/static/js/1.16fc7581.chunk.js",
-  "static/js/1.16fc7581.chunk.js.map": "/apn-event-admin/static/js/1.16fc7581.chunk.js.map",
-  "runtime~main.js": "/apn-event-admin/static/js/runtime~main.00bb37b1.js",
-  "runtime~main.js.map": "/apn-event-admin/static/js/runtime~main.00bb37b1.js.map",
-  "static/media/logo.svg": "/apn-event-admin/static/media/logo.5d5d9eef.svg",
-  "static/css/main.b357046e.chunk.css.map": "/apn-event-admin/static/css/main.b357046e.chunk.css.map",
-  "index.html": "/apn-event-admin/index.html",
-  "precache-manifest.89ca7d40be998aa51db849062f21b3d1.js": "/apn-event-admin/precache-manifest.89ca7d40be998aa51db849062f21b3d1.js",
-  "service-worker.js": "/apn-event-admin/service-worker.js"
+  "main.css": "./apn-event-admin/static/css/main.b357046e.chunk.css",
+  "main.js": "./apn-event-admin/static/js/main.8466c8a4.chunk.js",
+  "main.js.map": "./apn-event-admin/static/js/main.8466c8a4.chunk.js.map",
+  "static/js/1.16fc7581.chunk.js": "./apn-event-admin/static/js/1.16fc7581.chunk.js",
+  "static/js/1.16fc7581.chunk.js.map": "./apn-event-admin/static/js/1.16fc7581.chunk.js.map",
+  "runtime~main.js": "./apn-event-admin/static/js/runtime~main.01cf85e6.js",
+  "runtime~main.js.map": "./apn-event-admin/static/js/runtime~main.01cf85e6.js.map",
+  "static/media/logo.svg": "./apn-event-admin/static/media/logo.5d5d9eef.svg",
+  "static/css/main.b357046e.chunk.css.map": "./apn-event-admin/static/css/main.b357046e.chunk.css.map",
+  "index.html": "./apn-event-admin/index.html",
+  "precache-manifest.33ba2c5f72a6e98a23cb9187d919d069.js": "./apn-event-admin/precache-manifest.33ba2c5f72a6e98a23cb9187d919d069.js",
+  "service-worker.js": "./apn-event-admin/service-worker.js"
 }
