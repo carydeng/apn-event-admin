@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.b357046e.chunk.css",
-  "main.js": "/static/js/main.1c91731b.chunk.js",
-  "main.js.map": "/static/js/main.1c91731b.chunk.js.map",
-  "static/js/1.16fc7581.chunk.js": "/static/js/1.16fc7581.chunk.js",
-  "static/js/1.16fc7581.chunk.js.map": "/static/js/1.16fc7581.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-  "static/css/main.b357046e.chunk.css.map": "/static/css/main.b357046e.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.ed23bd0af35168c1330ae5253abd2ad7.js": "/precache-manifest.ed23bd0af35168c1330ae5253abd2ad7.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/apn-event-admin/static/css/main.b357046e.chunk.css",
+  "main.js": "/apn-event-admin/static/js/main.c6b1c970.chunk.js",
+  "main.js.map": "/apn-event-admin/static/js/main.c6b1c970.chunk.js.map",
+  "static/js/1.16fc7581.chunk.js": "/apn-event-admin/static/js/1.16fc7581.chunk.js",
+  "static/js/1.16fc7581.chunk.js.map": "/apn-event-admin/static/js/1.16fc7581.chunk.js.map",
+  "runtime~main.js": "/apn-event-admin/static/js/runtime~main.00bb37b1.js",
+  "runtime~main.js.map": "/apn-event-admin/static/js/runtime~main.00bb37b1.js.map",
+  "static/media/logo.svg": "/apn-event-admin/static/media/logo.5d5d9eef.svg",
+  "static/css/main.b357046e.chunk.css.map": "/apn-event-admin/static/css/main.b357046e.chunk.css.map",
+  "index.html": "/apn-event-admin/index.html",
+  "precache-manifest.89ca7d40be998aa51db849062f21b3d1.js": "/apn-event-admin/precache-manifest.89ca7d40be998aa51db849062f21b3d1.js",
+  "service-worker.js": "/apn-event-admin/service-worker.js"
 }
