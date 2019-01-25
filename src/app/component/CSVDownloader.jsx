@@ -20,10 +20,15 @@ const _saveAs = (text, filename) => {
 };
 
 class CSVDownloader extends Component {
+    state = {
+        total: '-'
+    };
+
     handleFetch = () => {
         _fetch()
             .then(json => {
                 console.log(json);
+                this.setState({total: json.length});
                 const opts = {
                     fields: [
                         {label: 'First Name', value: 'firstName'},
@@ -41,10 +46,10 @@ class CSVDownloader extends Component {
     };
 
     render() {
-        const {} = this.props;
         return (
             <div>
-                <p>↓↓↓Download↓↓↓</p>
+                <p>{`Total: ${this.state.total}`}</p>
+                <p>↓↓↓Download1↓↓↓</p>
                 <button onClick={this.handleFetch}>Download</button>
             </div>
 
