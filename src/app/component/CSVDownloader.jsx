@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {parse} from 'json2csv';
 
 const _fetch = () => {
-    const url = 'http://staging.api.hitalent.us/api/v1/events/4/event-users';
+    const url = 'https://api.hitalent.us/api/v1/events/5/event-users';
     const config = {
         method: 'GET',
         headers: {}
