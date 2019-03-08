@@ -49,7 +49,7 @@ class CSVDownloader extends Component {
         return (
             <div>
                 <p>{`Total: ${this.state.total}`}</p>
-                <p>↓↓↓Download1↓↓↓</p>
+                <p>↓↓↓Download↓↓↓</p>
                 <button onClick={this.handleFetch}>Download</button>
             </div>
 
