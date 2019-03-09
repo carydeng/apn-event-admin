@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {parse} from 'json2csv';
+import EventCodeForm from './EventCodeForm';
+import EventInfo from './EventInfo';
 
-const _fetch = () => {
-    const url = 'https://api.hitalent.us/api/v1/events/5/event-users';
+const _get = (url) => {
     const config = {
         method: 'GET',
         headers: {}
@@ -14,43 +15,50 @@ const _fetch = () => {
 
 const _saveAs = (text, filename) => {
     var pom = document.createElement('a');
-    pom.setAttribute('href', 'data:text/plain;charset=urf-8,'+encodeURIComponent(text));
+    pom.setAttribute('href', 'data:text/plain;charset=urf-8,' + encodeURIComponent(text));
     pom.setAttribute('download', filename);
     pom.click();
 };
 
 class CSVDownloader extends Component {
     state = {
-        total: '-'
+        eventUsers: []
     };
 
-    handleFetch = () => {
-        _fetch()
-            .then(json => {
-                console.log(json);
-                this.setState({total: json.length});
-                const opts = {
-                    fields: [
-                        {label: 'First Name', value: 'firstName'},
-                        {label: 'Last Name', value: 'lastName'},
-                        {label: 'Full Name', value: 'fullName'},
-                        {label: 'Organization', value: 'company'},
-                        {label: 'Phone', value: 'phone'},
-                        {label: 'Email', value: 'email'},
-                        {label: 'LinkedIn', value: 'linkedIn'},
-                    ]
-                };
-                const csv = parse(json, opts);
-                _saveAs(csv, 'event-users.csv');
+    handleGetEvent = ({eventId}) => {
+        const url = `https://api.hitalent.us/api/v1/events/${eventId}/event-users`;
+        _get(url)
+            .then(eventUsers => {
+                this.setState(state => ({
+                    ...state,
+                    eventUsers
+                }));
+                console.log(eventUsers);
             })
+    };
+
+    handleSaveAsCSC = () => {
+        const opts = {
+            fields: [
+                {label: 'First Name', value: 'firstName'},
+                {label: 'Last Name', value: 'lastName'},
+                {label: 'Full Name', value: 'fullName'},
+                {label: 'Organization', value: 'company'},
+                {label: 'Phone', value: 'phone'},
+                {label: 'Email', value: 'email'},
+                {label: 'LinkedIn', value: 'linkedIn'},
+            ]
+        };
+        const csv = parse(this.state.eventUsers, opts);
+        _saveAs(csv, 'event-users.csv');
     };
 
     render() {
         return (
-            <div>
-                <p>{`Total: ${this.state.total}`}</p>
-                <p>↓↓↓Download↓↓↓</p>
-                <button onClick={this.handleFetch}>Download</button>
+            <div style={{padding: '0 16px'}}>
+                <EventCodeForm onSubmit={this.handleGetEvent} />
+                <br />
+                <EventInfo eventUsers={this.state.eventUsers} onSave={this.handleSaveAsCSC} />
             </div>
 
         );

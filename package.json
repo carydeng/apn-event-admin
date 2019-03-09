@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "json2csv": "^4.3.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
